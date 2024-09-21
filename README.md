@@ -1,5 +1,7 @@
 # Arweave Wallet Connector
 
+English | [简体中文](README-zh.md)
+
 ## Live Demo
 
 The connector module itself does not include visual components and is independent of any javascript framework.
@@ -21,14 +23,17 @@ The connector is a final link to permanent account managers. Users are not requi
 ## Features
 
 For everyone:
+
 - Forever free
 - Can handle requests in the background ***
 
 For your users:
+
 - No install required
 - Available on any device, including mobile
 
 For developers:
+
 - Does not depend on any infrastructure (no api key)
 - Final - no breaking changes, only improvements
 - Fully typed
@@ -40,6 +45,7 @@ For developers:
 - Emits events for any property value change - listen using `wallet.on('event', callback)`
 
 For wallets developers:
+
 - Uses the [JSON RPC](https://www.jsonrpc.org/specification) api standard internally
 - Offers prebuilt runtime types validation that can be imported
 
@@ -47,12 +53,13 @@ For wallets developers:
 
 ## Note
 
-As of now, [arweave.app](https://arweave.app) is the only provider so it is recommended to offer it as a default option. Increase decentralization and permanence by allowing users to enter their own custom wallet URL. This will also let them use providers running on localhost in your application.
+As of now, [arweave.app](https://arweave.app) and [RWA-Wallet.com](https://pwa.rwa-wallet.com) is the only two providers so it is recommended to offer it as a default option. Increase decentralization and permanence by allowing users to enter their own custom wallet URL. This will also let them use providers running on localhost in your application.
 
 ## How to use
+
 Install from NPM:
 
-```
+```sh
 npm i arweave-wallet-connector
 ```
 
@@ -62,9 +69,9 @@ Import / Create instance / Set the URL to connect to / Launch:
 import { ArweaveWebWallet } from 'arweave-wallet-connector'
 
 const wallet = new ArweaveWebWallet({
-	// optionally provide information about your app that will be displayed in the wallet provider interface
-	name: 'Your application name',
-	logo: 'URL of your logo to be displayed to users'
+    // optionally provide information about your app that will be displayed in the wallet provider interface
+    name: 'Your application name',
+    logo: 'URL of your logo to be displayed to users'
 })
 
 wallet.setUrl('URL of the wallet provider to connect to')
