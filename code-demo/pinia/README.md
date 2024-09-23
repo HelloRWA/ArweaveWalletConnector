@@ -12,7 +12,7 @@ copy `stores` folder to your project
 
 ## 3. copy components
 
-copy `PwaConnector.vue` to your project
+copy `PwaConnector.vue` to your project, and use it in your app
 
 ## 4. use the `read` and `write` methods from the `aoStore`
 
